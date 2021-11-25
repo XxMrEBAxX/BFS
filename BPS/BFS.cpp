@@ -18,7 +18,8 @@ int city[9][9] = {
 enum { UNIVISIT, VISIT };
 char cityName[9] = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I' };
 
-#define MAXNODE 9
+constexpr auto MAXNODE = 9;
+
 bool BFS::pathFinding()
 {
 	bool visitInfo[MAXNODE];
